@@ -1,0 +1,12 @@
+javascript:(function(){
+    var style = document.createElement('style'); 
+    style.innerHTML = '#articleMain:after{content:none}';
+    %20document.head.append(style);
+    %20var%20style%20=%20document.createElement('style');
+    %20style.innerHTML%20=%20'.hidden{visibility:%20visible%20!important;
+    %20display:%20inline%20!important}';
+    %20document.head.append(style);
+    %20document.getElementById('videoPaywall').setAttribute('data-video-popup-display-video-percent',%20'100');
+    %20document.getElementById('videoPaywall').setAttribute('style',%20'visibility:%20hidden%20!important;
+    %20display:%20none%20!important');
+    try{document.getElementsByClassName('paywall-inner')[1].remove()}catch(e){}})()
